@@ -1,0 +1,87 @@
+@import url(home.css);
+@import url(galery.css);
+@import url(about.css);
+
+/* global styles */
+* {
+	margin: 0;
+	padding: 0;
+	scroll-behavior: smooth;
+}
+
+body {
+	background-color: #fbfaf5;
+	font-family: 'Roboto', sans-serif;
+	color: #333333;
+}
+
+h1,
+h2,
+h3 {
+	font-family: 'Montserrat', sans-serif;
+	color: #001f3f;
+}
+
+/* navbar styles */
+nav {
+	display: flex;
+	padding: 10px 20px;
+	justify-content: space-between;
+	position: sticky;
+	top: 0;
+	z-index: 4;
+	align-items: center;
+	background-color: #001f3f;
+	font-family: 'Lato', sans-serif;
+	font-size: 20px;
+}
+
+.logo a {
+	display: inline-flex;
+	margin: 5px 10px;
+	align-items: center;
+	gap: 5px;
+	text-decoration: none;
+}
+
+.logo h1 {
+	color: #fbfaf5;
+	font-size: 25px;
+	transition: filter 0.1s ease;
+}
+
+.logo img {
+	height: 50px;
+	width: auto;
+	transition: filter 0.1s ease;
+}
+
+.logo a:hover img,
+.logo a:hover h1 {
+	filter: brightness(0.8);
+}
+
+.nav-links {
+	list-style: none;
+	display: flex;
+	margin: 0;
+	padding: 0;
+	gap: 20px;
+}
+
+.nav-links li {
+	margin-right: 20px;
+	align-items: space-between;
+	align-content: center;
+}
+
+.nav-links a {
+	text-decoration: none;
+	color: #ffffff;
+	padding: 8px 16px;
+	transition: color 0.2s ease;
+}
+
+.nav-links a:hover {
+	color: #555;
+}
