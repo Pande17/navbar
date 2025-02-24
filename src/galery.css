@@ -6,11 +6,13 @@
 	height: auto;
 	margin: 20px 120px;
 	text-align: center;
+	align-items: center;
+	justify-items: center;
 }
 
 .galery h1 {
 	margin-top: 50px;
-	grid-row: span 5;
+	grid-row: span 1;
 	font-size: 50px;
 }
 
@@ -19,8 +21,20 @@
 	grid-template-columns: 1fr 2fr;
 	align-items: center;
 	gap: 150px;
+	padding-top: 100px;
 	margin-bottom: 80px;
 }
+
+.card1 {
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	align-items: center;
+	gap: 150px;
+	padding-top: 100px;
+	margin-bottom: 80px;
+	margin-top: -100px;
+}
+
 
 .card-image img {
 	width: 300px;

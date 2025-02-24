@@ -1,8 +1,10 @@
 .about {
 	display: grid;
+	grid-template-columns: repeat();
 	justify-items: center;
 	align-items: center;
 	text-align: center;
+	height: 62.5vh;
 }
 
 .about img {
@@ -11,6 +13,7 @@
 	height: 200px;
 	border-radius: 50%;
 	margin-top: 30px;
+	/* margin-bottom: -40px; */
 	box-shadow: 0px 0px 20px #001f3f;
 	transition: box-shadow 0.2s ease;
 }
@@ -23,6 +26,20 @@
 	width: auto;
 	height: auto;
 	margin-top: 30px;
-	display: table-column;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 	justify-content: space-around;
+}
+
+.about h1 {
+	margin-bottom: 20px;
+}
+
+.about p {
+	margin-bottom: 5px;
+}
+
+.about h3 {
+	margin-bottom: 10px;
 }
