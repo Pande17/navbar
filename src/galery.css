@@ -58,13 +58,8 @@
 	border-radius: 8px;
 	box-shadow: 0 4px 8px rgb(0, 0, 0, 0.4);
 	overflow: hidden;
-	transition: transform 0.3s ease;
 	height: auto;
 	width: 100%;
 	align-content: center;
 	z-index: 1;
-}
-
-.card-text:hover {
-	transform: scale(1.05);
 }

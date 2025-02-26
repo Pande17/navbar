@@ -11,7 +11,7 @@
 		<!-- Navbar -->
 		<nav>
 			<div class="logo">
-				<a href="home.html">
+				<a href="#">
 					<img src="img/logo.png" alt="Logo Website" />
 					<h1>Unreal Engine</h1>
 				</a>
@@ -19,7 +19,12 @@
 			<ul class="nav-links">
 				<li><a href="home.html">Home</a></li>
 				<li><a href="galery.html">Galery</a></li>
-				<li><a href="#">About</a></li>
+				<li><a href="about.html">About</a></li>
+				<div class="account">
+					<button id="loginBtn" class="loginBtn">
+						<img src="img/account.png" alt="Account" />
+					</button>
+				</div>
 			</ul>
 		</nav>
 
@@ -37,5 +42,50 @@
 		<footer>
 			<p>Made By Pande</p>
 		</footer>
+
+		<div id="loginForm" class="login-form">
+			<div class="login-content">
+				<span class="close-btn" id="closeBtn">&times;</span>
+				<h2>Login</h2>
+				<form action="post">
+					<label for="username">Username:</label>
+					<input type="text" name="username" id="username" required />
+					<label for="password">Password:</label>
+					<input type="password" name="password" id="password" required />
+					<a href="#registerForm" id="registerBtn">Don't Have Account?</a>
+					<button type="submit">Login</button>
+				</form>
+			</div>
+		</div>
+
+		<div id="registerForm" class="register-form">
+			<div class="register-content">
+				<span class="close-btn" id="closeBtn">&times;</span>
+				<h2>Register</h2>
+				<form action="post">
+					<label for="username">Username:</label>
+					<input type="text" name="username" id="username" required />
+					<label for="email">Email:</label>
+					<input type="email" name="email" id="email" required />
+
+					<label for="password">Password:</label>
+					<input type="password" name="password" id="password" required />
+					<label for="kelamin">Jenis Kelamin:</label>
+					<div class="radio-group">
+						<input type="radio" name="kelamin" id="pria" value="pria" required />
+						<label for="pria">Pria</label>
+
+						<input type="radio" name="kelamin" id="wanita" value="wanita" required />
+						<label for="wanita">Wanita</label>
+					</div>
+					<label for="alamat">Alamat:</label>
+					<input type="text" name="alamat" id="alamat" required />
+					<a href="#loginForm">Already Have Account?</a>
+					<button type="submit">Register</button>
+				</form>
+			</div>
+		</div>
+
+		<script src="js/script.js"></script>
 	</body>
 </html>

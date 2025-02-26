@@ -20,6 +20,11 @@
 				<li><a href="#">Home</a></li>
 				<li><a href="galery.html">Galery</a></li>
 				<li><a href="about.html">About</a></li>
+				<div class="account">
+					<button id="loginBtn" class="loginBtn">
+						<img src="img/account.png" alt="Account" />
+					</button>
+				</div>
 			</ul>
 		</nav>
 
@@ -36,27 +41,27 @@
 		<div class="game-section">
 			<h1>TOP 5 GAMES</h1>
 			<div class="game">
-				<a href="image1.html">
+				<a href="galery.html#fortnite">
 					<img src="img/fortnite.jpg" alt="Fortnite" />
 				</a>
 			</div>
 			<div class="game">
-				<a href="image2.html">
+				<a href="galery.html#gearsOfWar">
 					<img src="img/gearsOfWar.jfif" alt="Gears of War" />
 				</a>
 			</div>
 			<div class="game">
-				<a href="image3.html">
+				<a href="galery.html#streetFighter5">
 					<img src="img/streetFighter5.jfif" alt="Street Fighter 5" />
 				</a>
 			</div>
 			<div class="game">
-				<a href="image4.html">
+				<a href="galery.html#ffviiRemake">
 					<img src="img/ffviiRemake.jpg" alt="Final Fantasy VII Remake" />
 				</a>
 			</div>
 			<div class="game">
-				<a href="image5.html">
+				<a href="galery.html#blackMythWukong">
 					<img src="img/blackMythWukong.jpg" alt="Black Myth: Wukong" />
 				</a>
 			</div>
@@ -64,5 +69,50 @@
 		<footer>
 			<p>Made By Pande</p>
 		</footer>
+
+		<div id="loginForm" class="login-form">
+			<div class="login-content">
+				<span class="close-btn" id="closeBtn">&times;</span>
+				<h2>Login</h2>
+				<form action="post">
+					<label for="username">Username:</label>
+					<input type="text" name="username" id="username" required />
+					<label for="password">Password:</label>
+					<input type="password" name="password" id="password" required />
+					<a href="#registerForm" id="registerBtn">Don't Have Account?</a>
+					<button type="submit">Login</button>
+				</form>
+			</div>
+		</div>
+
+		<div id="registerForm" class="register-form">
+			<div class="register-content">
+				<span class="close-btn" id="closeBtn">&times;</span>
+				<h2>Register</h2>
+				<form action="post">
+					<label for="username">Username:</label>
+					<input type="text" name="username" id="username" required />
+					<label for="email">Email:</label>
+					<input type="email" name="email" id="email" required />
+
+					<label for="password">Password:</label>
+					<input type="password" name="password" id="password" required />
+					<label for="kelamin">Jenis Kelamin:</label>
+					<div class="radio-group">
+						<input type="radio" name="kelamin" id="pria" value="pria" required />
+						<label for="pria">Pria</label>
+
+						<input type="radio" name="kelamin" id="wanita" value="wanita" required />
+						<label for="wanita">Wanita</label>
+					</div>
+					<label for="alamat">Alamat:</label>
+					<input type="text" name="alamat" id="alamat" required />
+					<a href="#loginForm">Already Have Account?</a>
+					<button type="submit">Register</button>
+				</form>
+			</div>
+		</div>
+
+		<script src="js/script.js"></script>
 	</body>
 </html>

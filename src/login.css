@@ -1,0 +1,85 @@
+/* Login Form Styles */
+.login-form {
+	display: none; /* Hidden by default */
+	position: fixed;
+	z-index: 1;
+	left: 0;
+	top: 0;
+	width: 100vw;
+	height: 100vh;
+	overflow: none;
+	background-color: rgba(0, 0, 0, 0.4);
+}
+
+.login-content {
+	background-color: #fefefe;
+	margin: 15% auto;
+	padding: 20px;
+	border: 1px solid #888;
+	width: 80%;
+    height: fit-content;
+	max-width: 400px;
+	border-radius: 5px;
+}
+
+.close-btn {
+	color: #aaa;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+	color: black;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.login-content h2 {
+	margin-bottom: 20px;
+}
+
+.login-content label {
+	display: block;
+	margin-bottom: 5px;
+}
+
+.login-content input[type='text'],
+.login-content input[type='password'] {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+	border-radius: 4px;
+}
+
+.login-content button {
+	background-color: #001f3f;
+	color: white;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	cursor: pointer;
+	width: 100%;
+	border-radius: 4px;
+	transition: opacity 0.3s ease;
+}
+
+.login-content button:hover {
+	opacity: 0.8;
+}
+
+.login-content a {
+	text-decoration: none;
+	transition: color 0.1s ease;
+    color: #001f3f;
+    margin-top: 100px;
+}
+
+.login-content a:hover {
+	text-decoration: underline;
+    opacity: 0.8;
+}
